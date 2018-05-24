@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarlingsByScharling</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container_drop">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+                <div class="dropdown">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#smykker">Smykker</a>
+                        <div class="kategori">
+                            <a href="#armbaand">Armbånd</a>
+                            <a href="#oereringe">Øreringe</a>
+                        </div>
+                        <a href="#butikker">Butikker</a>
+                        <a href="#kontakt">Kontakt</a>
+                        <a href="#om">Om</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src=""></script>
+
+    <script>
+        $(window).ready(function() {
+            setTimeout(function() {
+                $(".container_drop").click(function() {
+                    $(".container_drop").toggleClass("change");
+                    $(".dropdown").slideToggle();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
