@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <section id="oreringe">
+
+    </section>
+
+    <template>
+       <div class="box">
+           <div class="orering">
+               <article>
+                   <h2 class="navn" data-title></h2>
+                   <img class="smykkebillede" data-image>
+                   <p class="pris" data-pris></p>
+               </article>
+           </div>
+       </div>
+   </template>
+
+    <script>
+        let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/orering/"
+        let oreringe = [];
+
+        let template = document.querySelector("template");
+        let display = document.querySelector("#oreringe");
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let jsonData = await fetch(jsonUrl);
+            oreringe = await jsonData.json();
+            visOreringe();
+
+        }
+
+        function visOreringe() {
+            oreringe.forEach(orering => {
+
+                let klon = template.cloneNode(true).content;
+                klon.querySelector("[data-title]").textContent = orering.acf.type;
+                klon.querySelector("[data-image]").src = orering.acf.foto.url;
+                klon.querySelector("[data-pris]").textContent = orering.acf.pris;
+
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = "orering.html?id=" + orering.id;
+                });
+
+                display.appendChild(klon);
+            });
+
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section id="single_orering">
+        <article>
+            <img class="smykkebillede" data-image>
+            <img class="smykkebilledeevt" data-evtimage>
+            <h2 class="navn" data-title></h2>
+            <p class="pris" data-pris></p>
+            <p class="farve" data-farve></p>
+            <p class="langde" data-langde></p>
+        </article>
+    </section>
+
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let urlID = urlParams.get('id');
+        console.log(urlID);
+
+        let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/orering/" + urlID;
+        let single = {};
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let jsonData = await fetch(jsonUrl);
+            single = await jsonData.json();
+            console.log(single);
+
+            visSingle();
+
+            function visSingle() {
+                document.querySelector("[data-image]").src = orering.acf.foto.url;
+                document.querySelector("[data-evtimage]").src = orering.acf.foto.evt.foto;
+                document.querySelector("[data-title]").textContent = orering.acf.type;
+                document.querySelector("[data-pris]").textContent = orering.acf.pris;
+                document.querySelector("[data-farve]").textContent = orering.acf.farve;
+                document.querySelector("[data-langde]").textContent = orering.acf.langde;
+
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
