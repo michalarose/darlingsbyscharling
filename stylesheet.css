@@ -129,3 +129,47 @@ video {
 
 
 /* *** SPLASH slut *** */
+
+
+/* *** smykker start *** */
+
+.container {
+    display: grid;
+    grid-template-columns: [col1-start] 300px [col2-start] 300px [col2-end];
+    grid-template-rows: [row1-start] auto [row1-end];
+    grid-column-gap: 5px;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.item-a {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start;
+}
+
+.item-b {
+    grid-column: col1-start;
+    grid-row: row2-start;
+}
+
+.item-c {
+    grid-column: col2-start;
+    grid-row: row2-start;
+}
+
+.overskrift {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    z-index: 1;
+    margin: -80px 10px 10px 10px;
+}
+
+
+/* *** smykker slut *** */
