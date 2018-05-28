@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <section id="single_orering">
+    <section id="single_armband">
         <article>
             <img class="smykkebillede" data-image>
             <img class="smykkebilledeevt" data-evtimage>
             <h2 class="navn" data-title></h2>
             <p class="pris" data-pris></p>
             <p class="farve" data-farve></p>
-            <p class="langde" data-langde></p>
+            <p class="storelse" data-str></p>
         </article>
     </section>
 
@@ -26,7 +26,7 @@
         let urlID = urlParams.get('id');
         console.log(urlID);
 
-        let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/orering/" + urlID;
+        let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/armband/" + urlID;
         let single;
 
         document.addEventListener("DOMContentLoaded", hentJson);
@@ -49,11 +49,12 @@
                 document.querySelector("[data-title]").textContent = single.acf.type;
                 document.querySelector("[data-pris]").textContent = single.acf.pris;
                 document.querySelector("[data-farve]").textContent = single.acf.farve;
-                document.querySelector("[data-langde]").textContent = single.acf.langde;
+                document.querySelector("[data-str]").textContent = single.acf.str;
 
 
             }
         }
+
     </script>
 </body>
 

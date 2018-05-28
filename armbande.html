@@ -10,13 +10,13 @@
 
 <body>
 
-    <section id="oreringe">
+    <section id="armbande">
 
     </section>
 
     <template>
        <div class="box">
-           <div class="orering">
+           <div class="armband">
                <article>
                    <h2 class="navn" data-title></h2>
                    <img class="smykkebillede" data-image>
@@ -27,31 +27,33 @@
    </template>
 
     <script>
-        let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/orering?per_page=100"
-        let oreringe = [];
+        let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/armband?per_page=100"
+        let armbande = [];
 
         let template = document.querySelector("template");
-        let display = document.querySelector("#oreringe");
+        let display = document.querySelector("#armbande");
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
             let jsonData = await fetch(jsonUrl);
-            oreringe = await jsonData.json();
-            visOreringe();
+            armbande = await jsonData.json();
+            visArmbande();
+            console.log(hentJson)
 
         }
 
-        function visOreringe() {
-            oreringe.forEach(orering => {
+        function visArmbande() {
+            console.log(visArmbande)
+            armbande.forEach(armband => {
 
                 let klon = template.cloneNode(true).content;
-                klon.querySelector("[data-title]").textContent = orering.acf.type;
-                klon.querySelector("[data-image]").src = orering.acf.foto.url;
-                klon.querySelector("[data-pris]").textContent = orering.acf.pris;
+                klon.querySelector("[data-title]").textContent = armband.acf.type;
+                klon.querySelector("[data-image]").src = armband.acf.foto.url;
+                klon.querySelector("[data-pris]").textContent = armband.acf.pris;
 
                 klon.querySelector("article").addEventListener("click", () => {
-                    location.href = "orering.html?id=" + orering.id;
+                    location.href = "armband.html?id=" + armband.id;
                 });
 
                 display.appendChild(klon);
