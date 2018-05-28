@@ -118,7 +118,6 @@ header {
 
 /* *** DROP DOWN MENU SLUT *** */
 
-
 /* *** SPLASH start *** */
 
 video {
@@ -130,7 +129,6 @@ video {
 
 
 /* *** SPLASH slut *** */
-
 
 /* *** smykker start *** */
 
@@ -174,3 +172,73 @@ img {
 
 
 /* *** smykker slut *** */
+
+#armbande {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    transition: all 1s ease;
+    justify-content: center;
+    max-width: 1080px;
+    margin: auto;
+
+}
+
+article {}
+
+
+
+.armband article {
+    position: relative;
+
+}
+
+.armband article:hover .navnpris {
+    visibility: visible;
+}
+
+
+
+/* *** orering start *** */
+
+.navnpris {
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 2;
+    background-color: aliceblue;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    opacity: 0.8;
+    visibility: hidden;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.smykkebillede {
+    width: 100%;
+}
+
+.orering article {
+    position: relative;
+
+}
+
+.orering article:hover .navnpris {
+    visibility: visible;
+}
+
+#oreringe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    transition: all 1s ease;
+    justify-content: center;
+    max-width: 1080px;
+    margin: auto;
+
+}
+
+/* *** orering slut *** */

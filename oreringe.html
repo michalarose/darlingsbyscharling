@@ -5,10 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
+    <header id="header">
+
+    </header>
+    <section id="filter">
+        <button>Alle</button>
+        <button>Lulu</button>
+        <button>Ella</button>
+        <button>Lilly</button>
+        <button>Liva</button>
+        <button>Zoé</button>
+        <button>Asta</button>
+        <button>Bella</button>
+        <button>Caya</button>
+        <button>Alma</button>
+    </section>
 
     <section id="oreringe">
 
@@ -18,31 +33,50 @@
        <div class="box">
            <div class="orering">
                <article>
+                  <div class="navnpris">
                    <h2 class="navn" data-title></h2>
-                   <img class="smykkebillede" data-image>
                    <p class="pris" data-pris></p>
+                   </div>
+                   <img class="smykkebillede" data-image>
                </article>
            </div>
        </div>
    </template>
 
     <script>
+        let filtertype;
+        let filternavn = "Alle";
         let jsonUrl = "http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-json/wp/v2/orering?per_page=100"
         let oreringe = [];
 
         let template = document.querySelector("template");
         let display = document.querySelector("#oreringe");
-
+        let filterknapper = document.querySelectorAll("#filter button").forEach(knap => {
+            knap.addEventListener("click", (e) => {
+                filtertype = e.target.className;
+                filternavn = e.target.textContent;
+                hentJson();
+            });
+        });
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
             let jsonData = await fetch(jsonUrl);
             oreringe = await jsonData.json();
-            visOreringe();
+            lavFiltrering();
 
         }
 
+        function lavFiltrering() {
+            //document.querySelector("#overskrift").textContent = filternavn;
+            if (filternavn != "Alle") {
+                oreringe = oreringe.filter(obs => obs.acf.type == filternavn);
+            }
+            visOreringe();
+        }
+
         function visOreringe() {
+            display.innerHTML = "";
             oreringe.forEach(orering => {
 
                 let klon = template.cloneNode(true).content;
