@@ -37,10 +37,10 @@ body {
 /* *** DROP DOWN MENU START *** */
 
 .ikon_kurv {
-    width: 35px;
+    width: 30px;
     position: absolute;
     right: 1%;
-    margin: 6px;
+    margin: 8px;
 }
 
 .logo {
@@ -175,19 +175,10 @@ video {
     grid-row-gap: 0px;
     transition: all 1s ease;
     justify-content: center;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
-}
-
-.container:hover {
-    background-color: aqua;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 .item-a {
@@ -209,8 +200,14 @@ video {
     margin: 0 auto;
     text-align: center;
     color: white;
-    top: 47%;
+    top: 48%;
 }
+
+
+/* *** forside slut *** */
+
+
+/* *** smykker start *** */
 
 .searchbar {
     border: none;
