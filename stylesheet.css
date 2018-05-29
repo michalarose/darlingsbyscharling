@@ -43,7 +43,6 @@ a {
 
 /* *** font slut *** */
 
-
 /* *** Slideshow start*** */
 
 #smykkesplash {
@@ -64,7 +63,6 @@ a {
 
 /* *** Slideshow slut *** */
 
-
 /* *** DROP DOWN MENU START *** */
 
 .ikon_kurv {
@@ -77,7 +75,8 @@ a {
 .logo {
     width: 400px;
     position: absolute;
-    Left: calc(50% - 200px)
+    Left: calc(50% - 200px);
+    margin-top: 20px;
 }
 
 #header {
@@ -94,7 +93,7 @@ a {
     padding: 25px 0px 2px 25px;
     display: block;
     cursor: pointer;
-    min-width: 260px;
+    min-width: 40px;
 }
 
 .container_drop a {
@@ -183,7 +182,6 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
-
 /* *** SPLASH start *** */
 
 video {
@@ -195,7 +193,6 @@ video {
 
 
 /* *** SPLASH slut *** */
-
 
 /* *** Forside start *** */
 
@@ -236,7 +233,6 @@ video {
 
 
 /* *** forside slut *** */
-
 
 /* *** smykker start *** */
 
@@ -282,7 +278,7 @@ button {
     padding: 7px;
     font-size: 1.5em;
     margin: 2px;
-    background-color: #faf1ef;
+    background-color: #fef9fe;
 }
 
 button:hover {
@@ -392,6 +388,18 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 580px) {
+    .logo {
+        width: 200px;
+        Left: calc(50% - 100px);
+    }
+    #filter {
+        margin-top: 120px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* *** Om start *** */
 
