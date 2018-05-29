@@ -5,13 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <script type='text/javascript' src='http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <header id="header">
+        <nav>
+            <img class="ikon_kurv" src="paper-bag.svg" alt="ikon shopping bag">
+            <div class="container_drop">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
 
+                <div class="dropdown">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#forside">Forside</a>
+                        <a href="#smykker">Smykker</a>
+                        <div class="kategori">
+                            <a href="armbande.html">Armbånd</a>
+                            <a href="oreringe.html">Øreringe</a>
+                        </div>
+                        <a href="#butikker">Butikker</a>
+                        <a href="#presse">Presse</a>
+                        <a href="#kontakt">Kontakt</a>
+                        <a href="#om">Om</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+
+
+
     <section id="single_orering">
         <article>
             <img class="smykkebillede" data-image>
@@ -57,6 +84,16 @@
 
             }
         }
+    </script>
+    <script>
+        $(window).ready(function() {
+            setTimeout(function() {
+                $(".container_drop").click(function() {
+                    $(".container_drop").toggleClass("change");
+                    $(".dropdown").slideToggle();
+                });
+            });
+        });
     </script>
 </body>
 

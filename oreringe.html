@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <header id="header"></header>
 
     <section id="filter">
         <div>
@@ -46,7 +48,8 @@
            </div>
        </div>
    </template>
-
+    <script src="header.js"></script>
+    <script type='text/javascript' src='http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <script>
         let filtertype;
         let filternavn = "Alle";
@@ -94,10 +97,18 @@
 
                 display.appendChild(klon);
             });
-
-
-
         }
+    </script>
+
+    <script>
+        $(window).ready(function() {
+            setTimeout(function() {
+                $(".container_drop").click(function() {
+                    $(".container_drop").toggleClass("change");
+                    $(".dropdown").slideToggle();
+                });
+            });
+        });
     </script>
 </body>
 
