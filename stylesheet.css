@@ -163,21 +163,7 @@ video {
 
 /* *** SPLASH slut *** */
 
-/* *** smykker start *** */
-
-#smykkeboks {
-    display: grid;
-    grid-template: 'left right';
-    grid-gap: 4px;
-    max-width: 1100px;
-    margin: 20px auto;
-
-}
-
-#tekstboks {
-    max-width: 600px;
-    margin: auto;
-}
+/* *** Forside start *** */
 
 .container {
     display: grid;
@@ -217,8 +203,21 @@ video {
 
 /* *** forside slut *** */
 
-
 /* *** smykker start *** */
+
+#smykkeboks {
+    display: grid;
+    grid-template: 'left right';
+    grid-gap: 4px;
+    max-width: 1100px;
+    margin: 20px auto;
+
+}
+
+#tekstboks {
+    max-width: 600px;
+    margin: auto;
+}
 
 .searchbar {
     border: none;
