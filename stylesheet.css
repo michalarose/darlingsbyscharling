@@ -184,6 +184,7 @@ button {
     padding: 7px;
     font-size: 1.5em;
     margin: 2px;
+    background-color: #faf1ef;
 }
 
 button:hover {
