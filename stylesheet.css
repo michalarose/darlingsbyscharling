@@ -3,11 +3,33 @@
     padding: 0;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     margin: 0;
     background-color: #faf1ef;
 }
 
+/* *** Slideshow start*** */
+
+#smykkesplash {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.slideshow {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+/* *** Slideshow slut *** */
 
 /* *** DROP DOWN MENU START *** */
 
@@ -16,6 +38,14 @@ body {
     position: absolute;
     right: 1%;
     margin: 6px;
+}
+
+
+
+.logo {
+    width: 400px;
+    position: absolute;
+    Left: calc(50% - 200px)
 }
 
 #header {
@@ -147,9 +177,7 @@ video {
     padding: 0px 20px;
 }
 
-img {
-    width: 100%;
-}
+
 
 .item-a {
     grid-area: top;
@@ -193,8 +221,8 @@ button:hover {
 }
 
 #filter {
-    text-align: left;
-    margin-top: 100px;
+    text-align: center;
+    margin-top: 200px;
     margin-bottom: 20px;
     max-width: 1080px;
     margin-left: auto;
@@ -215,6 +243,7 @@ button:hover {
     margin: auto;
     padding: 0 10px;
 
+
 }
 
 .armband article {
@@ -224,6 +253,7 @@ button:hover {
 
 .armband article:hover .navnpris {
     visibility: visible;
+    opacity: 0.8;
 }
 
 
@@ -239,10 +269,12 @@ button:hover {
     width: 100%;
     position: absolute;
     top: 40%;
-    opacity: 0.8;
+    opacity: 0;
     visibility: hidden;
-    transition-timing-function: ease-in-out;
     align-self: center;
+    -webkit-transition: opacity .5s, visibility .5s;
+    -o-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
 }
 
 .navn {
@@ -260,6 +292,7 @@ button:hover {
 
 .orering article:hover .navnpris {
     visibility: visible;
+    opacity: 0.8;
 }
 
 #oreringe {
