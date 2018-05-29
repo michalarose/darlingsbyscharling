@@ -8,3 +8,11 @@ async function hentHeader() {
     headerDOM.innerHTML = header;
 
 }
+$(window).scroll(function () {
+
+    if ($(this).scrollTop() > 150) {
+        $('.logo').fadeOut();
+    } else {
+        $('.logo').fadeIn();
+    }
+});

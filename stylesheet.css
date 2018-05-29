@@ -17,7 +17,7 @@ body {
 
 #smykkesplash {
     max-width: 1080px;
-    margin: auto;
+    margin: 160px auto 10px auto;
 }
 
 .slideshow {
@@ -32,7 +32,6 @@ body {
 
 
 /* *** Slideshow slut *** */
-
 
 /* *** DROP DOWN MENU START *** */
 
@@ -152,7 +151,6 @@ body {
 
 /* *** DROP DOWN MENU SLUT *** */
 
-
 /* *** SPLASH start *** */
 
 video {
@@ -165,8 +163,21 @@ video {
 
 /* *** SPLASH slut *** */
 
-
 /* *** smykker start *** */
+
+#smykkeboks {
+    display: grid;
+    grid-template: 'left right';
+    grid-gap: 4px;
+    max-width: 1100px;
+    margin: 20px auto;
+
+}
+
+#tekstboks {
+    max-width: 600px;
+    margin: auto;
+}
 
 .container {
     display: grid;
