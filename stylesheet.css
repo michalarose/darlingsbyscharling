@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    background-color: #faf1ef;
 }
 
 
@@ -135,13 +136,14 @@ video {
 
 .container {
     display: grid;
-    grid-template-columns: [col1-start] 300px [col2-start] 300px [col2-end];
-    grid-template-rows: [row1-start] auto [row1-end];
-    grid-column-gap: 5px;
-    width: 400px;
-    margin: 0 auto;
+    grid-template: 'top top' 'left right';
+    grid-gap: 4px;
+    grid-row-gap: 0px;
+    transition: all 1s ease;
     justify-content: center;
-    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0px 20px;
 }
 
 img {
@@ -149,26 +151,24 @@ img {
 }
 
 .item-a {
-    grid-column: col1-start / col3-start;
-    grid-row: row1-start;
+    grid-area: top;
 }
 
 .item-b {
-    grid-column: col1-start;
-    grid-row: row2-start;
+    grid-area: left;
 }
 
 .item-c {
-    grid-column: col2-start;
-    grid-row: row2-start;
+    grid-area: right;
 }
 
-.overskrift {
+.tekst {
     position: absolute;
+    font-size: 50px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
     color: white;
-    font-size: 60px;
-    z-index: 1;
-    margin: -80px 10px 10px 10px;
 }
 
 .searchbar {
