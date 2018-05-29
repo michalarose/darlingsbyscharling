@@ -137,16 +137,6 @@ video {
 /* *** smykker start *** */
 
 .container {
-    /*
-    display: grid;
-    grid-template-columns: [col1-start] 300px [col2-start] 300px [col2-end];
-    grid-template-rows: [row1-start] auto [row1-end];
-    grid-column-gap: 5px;
-    width: 400px;
-    margin: 0 auto;
-    justify-content: center;
-    position: relative;
-*/
     display: grid;
     grid-template: 'top top' 'left right';
     grid-gap: 4px;
@@ -172,6 +162,15 @@ img {
 
 .item-c {
     grid-area: right;
+}
+
+.tekst {
+    position: absolute;
+    font-size: 50px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
 }
 
 
