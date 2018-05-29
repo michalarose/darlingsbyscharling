@@ -9,8 +9,39 @@ img {
 
 body {
     margin: 0;
-    background-color: #faf1ef;
+    background-color: #fef9fe;
 }
+
+
+/* *** font start *** */
+
+@font-face {
+    font-family: 'districtthinregular';
+    src: url('webfontkit-20180529-102725/distth_-webfont.woff2') format('woff2'), url('webfontkit-20180529-102725/distth_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'districtthinregular', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a {
+    font-family: 'districtthinregular', sans-serif;
+    font-weight: 1;
+    font-size: 1.5em;
+}
+
+.tekst {
+    font-family: 'districtthinregular', sans-serif;
+    font-weight: 700;
+    font-size: 10em;
+}
+
+
+/* *** font slut *** */
 
 
 /* *** Slideshow start*** */
@@ -33,13 +64,14 @@ body {
 
 /* *** Slideshow slut *** */
 
+
 /* *** DROP DOWN MENU START *** */
 
 .ikon_kurv {
-    width: 30px;
+    width: 33px;
     position: absolute;
     right: 1%;
-    margin: 8px;
+    padding: 25px 15px 2px 0px
 }
 
 .logo {
@@ -59,7 +91,7 @@ body {
 .container_drop {
     margin: 0;
     position: fixed;
-    padding: 2px 0px 2px 25px;
+    padding: 25px 0px 2px 25px;
     display: block;
     cursor: pointer;
     min-width: 260px;
@@ -151,6 +183,7 @@ body {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 video {
@@ -162,6 +195,7 @@ video {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** Forside start *** */
 
@@ -203,6 +237,7 @@ video {
 
 /* *** forside slut *** */
 
+
 /* *** smykker start *** */
 
 #smykkeboks {
@@ -211,7 +246,6 @@ video {
     grid-gap: 4px;
     max-width: 1100px;
     margin: 20px auto;
-
 }
 
 #tekstboks {
