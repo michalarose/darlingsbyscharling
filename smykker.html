@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darlings by Scharling</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="smykkesplash">
+
+        <div class="slideshow">
+            <img src="billeder_smykker/armb%C3%A5ndgr%C3%B8n.png" class="mySlides">
+            <img src="billeder_smykker/armbb%C3%A5ndglas.png" class="mySlides">
+        </div>
+
+    </section>
+
+    <section id="smykkeboks">
+        <div class="oreringelink">
+
+        </div>
+        <div class="armbandlink">
+
+        </div>
+
+    </section>
+
+    <script src="header.js"></script>
+    <script>
+        let slideIndex = 1;
+        console.log(slideIndex);
+        carousel();
+
+
+        function carousel() {
+
+            let i;
+            let x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                console.log("hgjhg jh", slideIndex);
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+
+        $(window).ready(function() {
+            setTimeout(function() {
+                $(".container_drop").click(function() {
+                    $(".container_drop").toggleClass("change");
+                    $(".dropdown").slideToggle();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
