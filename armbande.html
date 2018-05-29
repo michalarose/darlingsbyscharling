@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <script type='text/javascript' src='http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+
     <header id="header">
 
     </header>
     <section id="filter">
-        <button>Alle</button>
-        <button>Coco</button>
-        <button>Vita</button>
-        <button>Kiki</button>
-        <button>Lola</button>
-        <button>Mai</button>
-        <button>Noa</button>
-        <button>Oline</button>
+        <div>
+            <button>Alle</button>
+            <button>Coco</button>
+            <button>Vita</button>
+            <button>Kiki</button>
+        </div>
+        <div>
+            <button>Lola</button>
+            <button>Mai</button>
+            <button>Noa</button>
+            <button>Oline</button>
+        </div>
+        <input class="searchbar" type="text" placeholder="search..">
     </section>
     <div class="containersmykker">
         <section id="armbande">
@@ -95,6 +103,17 @@
 
         }
     </script>
+    <script>
+        $(window).ready(function() {
+            setTimeout(function() {
+                $(".container_drop").click(function() {
+                    $(".container_drop").toggleClass("change");
+                    $(".dropdown").slideToggle();
+                });
+            });
+        });
+    </script>
+    <script src="header.js"></script>
 </body>
 
 </html>
