@@ -121,6 +121,7 @@ body {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 video {
@@ -132,6 +133,7 @@ video {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** smykker start *** */
 
@@ -145,10 +147,21 @@ video {
     max-width: 400px;
     margin: 0 auto;
     padding: 0px 20px;
+    position: relative;
 }
 
 img {
     width: 100%;
+    z-index: 10;
+}
+
+.container:hover {
+    background-color: aqua;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .item-a {
@@ -165,11 +178,12 @@ img {
 
 .tekst {
     position: absolute;
-    font-size: 50px;
-    width: 400px;
+    font-size: 40px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     color: white;
+    top: 47%;
 }
 
 .searchbar {
@@ -188,7 +202,6 @@ button {
 
 button:hover {
     color: #8B4F63;
-
 }
 
 #filter {
@@ -202,6 +215,7 @@ button:hover {
     position: inherit;
 }
 
+
 /* *** smykker slut *** */
 
 #armbande {
@@ -213,18 +227,15 @@ button:hover {
     max-width: 1080px;
     margin: auto;
     padding: 0 10px;
-
 }
 
 .armband article {
     position: relative;
-
 }
 
 .armband article:hover .navnpris {
     visibility: visible;
 }
-
 
 
 /* *** orering start *** */
@@ -254,7 +265,6 @@ button:hover {
 
 .orering article {
     position: relative;
-
 }
 
 .orering article:hover .navnpris {
@@ -270,8 +280,8 @@ button:hover {
     max-width: 1080px;
     margin: auto;
     padding: 0 10px;
-
 }
+
 
 /* *** orering slut *** */
 
@@ -286,3 +296,37 @@ button:hover {
         font-size: 1em;
     }
 }
+
+
+/* *** Om start *** */
+
+#om .container {
+    display: grid;
+    grid-template: 'left right' 'bottom bottom';
+    grid-gap: 4px;
+    grid-row-gap: 0px;
+    transition: all 1s ease;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+#om img {
+    width: 100%;
+}
+
+.item-1 {
+    grid-area: left;
+}
+
+.item-2 {
+    grid-area: right;
+}
+
+.item-3 {
+    grid-area: bottom;
+}
+
+
+/* *** Om slut *** */
