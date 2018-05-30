@@ -12,45 +12,44 @@
 <body>
     <script type='text/javascript' src='http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <header id="header">
-        <nav>
-            <img class="ikon_kurv" src="paper-bag.svg" alt="ikon shopping bag">
-            <div class="container_drop">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
 
-                <div class="dropdown">
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#forside">Forside</a>
-                        <a href="#smykker">Smykker</a>
-                        <div class="kategori">
-                            <a href="armbande.html">Armbånd</a>
-                            <a href="oreringe.html">Øreringe</a>
-                        </div>
-                        <a href="#butikker">Butikker</a>
-                        <a href="#presse">Presse</a>
-                        <a href="#kontakt">Kontakt</a>
-                        <a href="#om">Om</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
 
 
 
     <section id="single_orering">
         <article>
-            <img class="smykkebillede" data-image>
-            <img class="smykkebilledeevt" data-evtimage>
-            <h2 class="navn" data-title></h2>
-            <p class="pris" data-pris></p>
-            <p class="farve" data-farve></p>
-            <p class="langde" data-langde></p>
+            <div class="venstre">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <img class="smykkebillede" data-image>
+                    </div>
+                    <div classe="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <img class="smykkebilledeevt" data-evtimage>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="hojre">
+                <div class="info">
+                    <h2 class="navn" data-title></h2>
+                    <p class="pris" data-pris></p>
+                    <p class="farve" data-farve></p>
+                    <p class="langde" data-langde></p>
+                    <button class="kurv" type="submit">tilføj til kurv</button>
+                </div>
+            </div>
         </article>
     </section>
 
-
+    <script src="header.js"></script>
     <script>
         let urlParams = new URLSearchParams(window.location.search);
         let urlID = urlParams.get('id');
@@ -84,6 +83,7 @@
 
             }
         }
+
     </script>
     <script>
         $(window).ready(function() {
@@ -94,6 +94,40 @@
                 });
             });
         });
+
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
     </script>
 </body>
 
