@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="stylesheet.css">
+<head id="head">
+
 </head>
 
 <body>
@@ -37,14 +34,17 @@
                     <h2 class="navn" data-title></h2>
                     <p class="pris" data-pris></p>
                     <p class="farve" data-farve></p>
-                    <p class="storelse" data-langde></p>
+                    <p class="storelse" data-str></p>
                     <button class="kurv" type="submit">tilføj til kurv</button>
                 </div>
             </div>
         </article>
     </section>
+    <footer id="footer"></footer>
 
+    <script src="head.js"></script>
     <script src="header.js"></script>
+    <script src="footer.js"></script>
     <script>
         let urlParams = new URLSearchParams(window.location.search);
         let urlID = urlParams.get('id');
@@ -78,6 +78,7 @@
 
             }
         }
+
     </script>
     <script>
         var slideIndex = 1;
@@ -110,6 +111,7 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+
     </script>
 </body>
 

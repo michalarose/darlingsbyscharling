@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head id="head">
+
 </head>
 
 <body>
@@ -16,13 +12,13 @@
 
     </header>
     <section id="filter">
-        <div>
+        <div class="filtermenu">
             <button>Alle</button>
             <button>Coco</button>
             <button>Vita</button>
             <button>Kiki</button>
         </div>
-        <div>
+        <div class="filtermenu">
             <button>Lola</button>
             <button>Mai</button>
             <button>Noa</button>
@@ -48,6 +44,11 @@
            </div>
        </div>
    </template>
+    <footer id="footer"></footer>
+
+    <script src="head.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
     <script type='text/javascript' src='http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <script>
         let filtertype;
@@ -103,7 +104,6 @@
 
         }
     </script>
-    <script src="header.js"></script>
     <script>
         $(window).ready(function() {
             setTimeout(function() {
