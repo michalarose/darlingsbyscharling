@@ -288,7 +288,7 @@ video {
 #smykkeboks {
     grid-template: 'left right';
     grid-gap: 10px;
-    max-width: 1100px;
+    max-width: 1080px;
     margin: 20px auto;
     position: relative;
     justify-content: center;
@@ -445,6 +445,8 @@ button:hover {
     font-size: 1.5em;
     background-color: #fef9fe;
     position: absolute;
+    left: 81%;
+    top: 81%;
 }
 
 /* *** *** */
