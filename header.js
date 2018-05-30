@@ -10,7 +10,7 @@ async function hentHeader() {
 }
 $(window).scroll(function () {
 
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 50) {
         $('.logo').fadeOut();
     } else {
         $('.logo').fadeIn();
