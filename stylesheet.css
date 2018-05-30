@@ -12,6 +12,13 @@ body {
 /* *** font start *** */
 
 @font-face {
+    font-family: 'rieslingregular';
+    src: url('webfontkit-Riesling/riesling-webfont.woff2') format('woff2'), url('webfontkit-Riesling/riesling-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'districtthinregular';
     src: url('webfontkit-20180529-102725/distth_-webfont.woff2') format('woff2'), url('webfontkit-20180529-102725/distth_-webfont.woff') format('woff');
     font-weight: normal;
@@ -32,13 +39,15 @@ a {
 }
 
 .tekst {
-    font-family: 'districtthinregular', sans-serif;
-    font-weight: 700;
-    font-size: 10em;
+    font-family: 'rieslingregular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 5px;
 }
 
 
 /* *** font slut *** */
+
 
 /* *** Slideshow start*** */
 
@@ -59,6 +68,7 @@ a {
 
 
 /* *** Slideshow slut *** */
+
 
 /* *** DROP DOWN MENU START *** */
 
@@ -104,13 +114,14 @@ a {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: #8B4F63;
     margin: 6px 0;
     transition: 0.4s;
 }
 
 .kategori {
-    font-size: 10px;
+    font-size: 8px;
+    margin-left: 10px;
 }
 
 
@@ -119,7 +130,7 @@ a {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-    background-color: black;
+    background-color: #8B4F63;
 }
 
 
@@ -135,7 +146,7 @@ a {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: black;
+    background-color: #8B4F63;
 }
 
 .dropdown {
@@ -154,7 +165,7 @@ a {
 /* Links inside the dropdown */
 
 .dropdown-content a {
-    color: black;
+    color: #8B4F63;
     padding: 5px 0px 0px 10px;
     text-decoration: none;
     display: block;
@@ -166,7 +177,7 @@ a {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-    color: pink;
+    color: #ffb1ae;
 }
 
 
@@ -179,6 +190,7 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 #splash a {
@@ -187,10 +199,6 @@ a {
     margin-top: 50%;
     left: 50%;
     animation: jump 2s infinite;
-}
-
-.downarrow:hover {
-    color: #FFAAAA;
 }
 
 @keyframes jump {
@@ -216,6 +224,7 @@ video {
 
 /* *** SPLASH slut *** */
 
+
 /* *** Forside start *** */
 
 .container img {
@@ -228,8 +237,7 @@ video {
     grid-gap: 4px;
     grid-row-gap: 0px;
     transition: all 1s ease;
-    justify-content: center;
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
@@ -249,16 +257,29 @@ video {
 
 .tekst {
     position: absolute;
-    font-size: 40px;
+    font-size: 170px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    color: white;
-    top: 48%;
+    color: #ffb1ae;
+    top: 41%;
+}
+
+@media screen and (max-width: 580px) {
+    .tekst {
+        position: absolute;
+        font-size: 100px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: #ffb1ae;
+        top: 41%;
+    }
 }
 
 
 /* *** forside slut *** */
+
 
 /* *** smykker start *** */
 
@@ -415,6 +436,7 @@ button:hover {
 
 /* *** orering slut *** */
 
+
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -425,7 +447,6 @@ button:hover {
     grid-gap: 4px;
     grid-row-gap: 0px;
     position: relative;
-
 }
 
 #single_armband {
@@ -436,7 +457,6 @@ button:hover {
     grid-gap: 4px;
     grid-row-gap: 0px;
     position: relative;
-
 }
 
 .kurv {
@@ -447,9 +467,12 @@ button:hover {
     position: absolute;
 }
 
-/* *** *** */
 
 /* *** *** */
+
+
+/* *** *** */
+
 
 /* *** enkelt smykke slut *** */
 
@@ -541,6 +564,7 @@ iframe {
 
 /* *** Om slut *** */
 
+
 /* *** Presse start *** */
 
 #presse {
@@ -563,6 +587,7 @@ iframe {
 
 
 /* *** Presse slut *** */
+
 
 /* *** FOOTER START *** */
 
