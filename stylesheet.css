@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-img {
-    width: 100%;
-}
-
 body {
     margin: 0;
     background-color: #fef9fe;
@@ -184,6 +180,31 @@ a {
 
 /* *** SPLASH start *** */
 
+.downarrow {
+    width: 40px;
+    position: absolute;
+    padding: 50%;
+    margin: 0 auto;
+    text-align: center;
+    animation: jump 2s infinite;
+}
+
+.downarrow:hover {
+    color: #FFAAAA;
+}
+
+@keyframes jump {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 video {
     height: 100%;
     width: 100%;
@@ -195,6 +216,10 @@ video {
 /* *** SPLASH slut *** */
 
 /* *** Forside start *** */
+
+.container img {
+    width: 100%;
+}
 
 .container {
     display: grid;
@@ -266,6 +291,10 @@ video {
     margin: 20px auto;
     position: relative;
     justify-content: center;
+}
+
+#smykkeboks img {
+    width: 100%;
 }
 
 #tekstboks {
@@ -581,13 +610,11 @@ button:hover {
 #om .container {
     display: grid;
     grid-template: 'left right' 'bottom bottom';
-    grid-gap: 4px;
-    grid-row-gap: 0px;
     transition: all 1s ease;
-    justify-content: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 0px 0px;
+    margin-top: 150px;
 }
 
 #om img {
@@ -596,15 +623,89 @@ button:hover {
 
 .item-1 {
     grid-area: left;
+    max-width: 300px;
 }
 
 .item-2 {
     grid-area: right;
+    max-width: 300px;
 }
 
 .item-3 {
     grid-area: bottom;
+    margin: 0 auto;
+    padding: 40px 0px;
+    width: 58.5vw;
+    height: 32.9vw;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
 
 
 /* *** Om slut *** */
+
+
+/* *** FOOTER START *** */
+
+#footer {
+    background-image: url(baggrund_bag.png);
+    background-blend-mode: color;
+    padding: 1em 2em 1em 2em;
+    background-color: #ffb1ae;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#footer .icons {
+    font-size: 2em;
+}
+
+#footer .icons a {
+    color: white;
+}
+
+#footer .icons a:hover {
+    color: #f5e6d0;
+}
+
+#footer .copyright {
+    grid-gap: 5px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.125em;
+    padding: 20px 0px;
+    color: white;
+}
+
+#footer .copyright li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#footer .copyright li a {
+    color: inherit;
+}
+
+#footer .copyright li a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    #footer .copyright li {
+        border: 0;
+        display: block;
+        line-height: 1.65em;
+        margin: 0;
+        padding: 0.5em 0;
+    }
+}
+
+#footer p {
+    color: white;
+}
+
+
+/* *** FOOTER SLUT *** */
