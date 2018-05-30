@@ -317,7 +317,7 @@ video {
 #smykkeboks {
     grid-template: 'left right';
     grid-gap: 10px;
-    max-width: 1100px;
+    max-width: 1080px;
     margin: 20px auto;
     position: relative;
     justify-content: center;
@@ -328,8 +328,14 @@ video {
 }
 
 #tekstboks {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
+}
+
+#tekstboks p {
+    font-size: 1.4em;
+    margin: 10px;
+    text-align: justify;
 }
 
 .searchbar {
@@ -473,6 +479,8 @@ button:hover {
     font-size: 1.5em;
     background-color: #fef9fe;
     position: absolute;
+    left: 81%;
+    top: 81%;
 }
 
 
