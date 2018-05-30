@@ -39,6 +39,7 @@ a {
 
 /* *** font slut *** */
 
+
 /* *** Slideshow start*** */
 
 #smykkesplash {
@@ -58,6 +59,7 @@ a {
 
 
 /* *** Slideshow slut *** */
+
 
 /* *** DROP DOWN MENU START *** */
 
@@ -178,6 +180,7 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 .downarrow {
@@ -214,6 +217,7 @@ video {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** Forside start *** */
 
@@ -258,6 +262,7 @@ video {
 
 
 /* *** forside slut *** */
+
 
 /* *** smykker start *** */
 
@@ -605,6 +610,7 @@ button:hover {
     }
 }
 
+
 /* *** Om start *** */
 
 #om .container {
@@ -646,6 +652,30 @@ iframe {
 
 
 /* *** Om slut *** */
+
+
+/* *** Presse start *** */
+
+#presse {
+    margin-top: 150px;
+}
+
+#presse img {
+    width: 30vw;
+    margin: 30px;
+}
+
+#presse .text {
+    width: 30vw;
+    margin: 0px 30px;
+    margin-top: -20px;
+    font-family: 'districtthinregular', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+/* *** Presse slut *** */
 
 
 /* *** FOOTER START *** */
