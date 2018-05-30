@@ -44,6 +44,7 @@
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
+
             let jsonData = await fetch(jsonUrl);
             single = await jsonData.json();
             console.log(single);
