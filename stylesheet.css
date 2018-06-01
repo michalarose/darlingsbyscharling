@@ -74,7 +74,9 @@ a {
     text-align: justify;
 }
 
+
 /* *** font slut *** */
+
 
 /* *** Slideshow start*** */
 
@@ -95,6 +97,7 @@ a {
 
 
 /* *** Slideshow slut *** */
+
 
 /* *** DROP DOWN MENU START *** */
 
@@ -216,14 +219,25 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 #splash a {
     width: 40px;
     position: absolute;
     margin-top: 50%;
-    left: 50%;
+    Left: 48%;
     animation: jump 2s infinite;
+}
+
+@media screen and (max-width: 560px) {
+    #splash a {
+        width: 40px;
+        position: absolute;
+        margin-top: 45%;
+        left: 48%;
+        animation: jump 2s infinite;
+    }
 }
 
 @keyframes jump {
@@ -248,6 +262,7 @@ video {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** Forside start *** */
 
@@ -291,6 +306,13 @@ video {
     position: relative;
 }
 
+.container:hover {
+    display: grid;
+    grid-template: 'top top' 'left right';
+    padding: -10px -100px;
+    filter: brightness(0.7);
+}
+
 .item-a {
     grid-area: top;
 }
@@ -311,6 +333,7 @@ video {
     text-align: center;
     color: #ffb1ae;
     top: 41%;
+    z-index: 100;
 }
 
 @media screen and (max-width: 580px) {
@@ -327,6 +350,7 @@ video {
 
 
 /* *** forside slut *** */
+
 
 /* *** smykker start *** */
 
@@ -377,7 +401,6 @@ video {
 #tekstboks {
     max-width: 800px;
     margin: auto;
-
 }
 
 #tekstboks p {
@@ -498,6 +521,7 @@ button:hover {
 
 /* *** orering slut *** */
 
+
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -531,7 +555,9 @@ button:hover {
 
 /* *** *** */
 
+
 /* *** *** */
+
 
 /* *** enkelt smykke slut *** */
 
@@ -627,6 +653,7 @@ iframe {
 
 /* *** Om slut *** */
 
+
 /* *** Presse start *** */
 
 #presse {
@@ -650,12 +677,11 @@ iframe {
 
 /* *** Presse slut *** */
 
+
 /* *** FOOTER START *** */
 
 #footer {
-    background-image: url(baggrund_bag.png);
-    background-blend-mode: color;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 2em 2em 2em;
     background-color: #ffb1ae;
     text-align: center;
     margin-top: 50px;
@@ -674,7 +700,6 @@ iframe {
 }
 
 #footer .copyright {
-    grid-gap: 5px;
     color: white;
     font-size: 1em;
     letter-spacing: 0.125em;
@@ -691,10 +716,6 @@ iframe {
     color: inherit;
 }
 
-#footer .copyright li a:hover {
-    color: #fff;
-}
-
 @media screen and (max-width: 480px) {
     #footer .copyright li {
         border: 0;
@@ -705,8 +726,38 @@ iframe {
     }
 }
 
-#footer p {
+.copyright p {
     color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#footer .kontakt {
+    max-width: 50%;
+    margin-left: -10px;
+    text-align: right;
+}
+
+#footer .information {
+    max-width: 50%;
+    margin-right: -10px;
+    margin-top: -55px;
+    text-align: left;
+}
+
+.copyright a {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.125em;
+    color: white;
+    text-decoration: none;
+    font-family: 'districtthinregular', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.copyright a:hover {
+    color: #f5e6d0
 }
 
 
