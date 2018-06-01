@@ -7,7 +7,7 @@ async function hentHeader() {
 
     headerDOM.innerHTML = header;
 
-}
+};
 $(window).scroll(function () {
 
     if ($(this).scrollTop() > 50) {
