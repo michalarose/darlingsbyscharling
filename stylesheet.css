@@ -228,13 +228,27 @@ video {
 /* *** Forside start *** */
 
 #info_tekst {
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
+}
+
+#info_tekst .overskrift {
+    font-family: 'rieslingregular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+#info_tekst p {
+    font-family: 'rieslingregular', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-style: block;
 }
 
 .info_tekst {
     text-align: center;
-    margin: 40px 0px;
 }
 
 .container img {
