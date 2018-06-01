@@ -227,6 +227,16 @@ video {
 
 /* *** Forside start *** */
 
+#info_tekst {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.info_tekst {
+    text-align: center;
+    margin: 40px 0px;
+}
+
 .container img {
     width: 100%;
 }
@@ -234,7 +244,7 @@ video {
 .container {
     display: grid;
     grid-template: 'top top' 'left right';
-    grid-gap: 4px;
+    grid-gap: 7px;
     grid-row-gap: 0px;
     transition: all 1s ease;
     max-width: 700px;
