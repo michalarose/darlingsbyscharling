@@ -251,6 +251,30 @@ video {
 
 /* *** Forside start *** */
 
+#info_tekst {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#info_tekst .overskrift {
+    font-family: 'rieslingregular', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+#info_tekst p {
+    font-family: 'rieslingregular', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-style: block;
+}
+
+.info_tekst {
+    text-align: center;
+}
+
 .container img {
     width: 100%;
 }
@@ -258,7 +282,7 @@ video {
 .container {
     display: grid;
     grid-template: 'top top' 'left right';
-    grid-gap: 4px;
+    grid-gap: 7px;
     grid-row-gap: 0px;
     transition: all 1s ease;
     max-width: 700px;
