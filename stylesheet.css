@@ -45,9 +45,36 @@ a {
     letter-spacing: 5px;
 }
 
+.info {
+    margin: 0 10px;
+}
+
+.info h2 {
+    font-family: 'districtthinregular';
+    font-size: 1.9em;
+}
+
+.info h3 {
+    font-family: 'districtthinregular';
+    font-size: 1.44em;
+    margin-top: 10px;
+}
+
+.info p {
+    font-family: 'districtthinregular';
+    font-size: 1em;
+}
+
+.instuktioner p {
+    font-size: 0.8em;
+}
+
+.instuktioner {
+    max-width: 400px;
+    text-align: justify;
+}
 
 /* *** font slut *** */
-
 
 /* *** Slideshow start*** */
 
@@ -58,7 +85,7 @@ a {
 
 .slideshow {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .mySlides {
@@ -68,7 +95,6 @@ a {
 
 
 /* *** Slideshow slut *** */
-
 
 /* *** DROP DOWN MENU START *** */
 
@@ -190,7 +216,6 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
-
 /* *** SPLASH start *** */
 
 #splash a {
@@ -224,12 +249,11 @@ video {
 
 /* *** SPLASH slut *** */
 
-
 /* *** Forside start *** */
 
 #info_tekst {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto 60px;
 }
 
 #info_tekst .overskrift {
@@ -261,7 +285,6 @@ video {
     grid-template: 'top top' 'left right';
     grid-gap: 7px;
     grid-row-gap: 0px;
-    transition: all 1s ease;
     max-width: 700px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -305,7 +328,6 @@ video {
 
 /* *** forside slut *** */
 
-
 /* *** smykker start *** */
 
 .smykkenavn1 {
@@ -343,7 +365,7 @@ video {
     grid-template: 'left right';
     grid-gap: 10px;
     max-width: 1080px;
-    margin: 20px auto;
+    margin: 100px auto;
     position: relative;
     justify-content: center;
 }
@@ -355,6 +377,7 @@ video {
 #tekstboks {
     max-width: 800px;
     margin: auto;
+
 }
 
 #tekstboks p {
@@ -475,7 +498,6 @@ button:hover {
 
 /* *** orering slut *** */
 
-
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -503,17 +525,13 @@ button:hover {
     border: none;
     font-size: 1.5em;
     background-color: #fef9fe;
-    position: absolute;
-    left: 81%;
-    top: 81%;
+    border: solid #ffb1ae;
 }
 
 
 /* *** *** */
 
-
 /* *** *** */
-
 
 /* *** enkelt smykke slut *** */
 
@@ -539,9 +557,13 @@ button:hover {
 @media screen and (min-width: 750px) {
     .smykkenavn1 {
         position: absolute;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
     }
     .smykkenavn2 {
-        font-size: 20px;
+        position: absolute;
         width: 50%;
         margin: 0 auto;
         text-align: center;
@@ -605,7 +627,6 @@ iframe {
 
 /* *** Om slut *** */
 
-
 /* *** Presse start *** */
 
 #presse {
@@ -628,7 +649,6 @@ iframe {
 
 
 /* *** Presse slut *** */
-
 
 /* *** FOOTER START *** */
 
