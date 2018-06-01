@@ -72,6 +72,7 @@ a {
 .instuktioner {
     max-width: 400px;
     text-align: justify;
+    margin-top: 50px;
 }
 
 /* *** font slut *** */
@@ -246,6 +247,9 @@ video {
     pointer-events: none;
 }
 
+.box img {
+    border: 1px solid #8B4F63;
+}
 
 /* *** SPLASH slut *** */
 
@@ -381,9 +385,13 @@ video {
 }
 
 #tekstboks p {
-    font-size: 1.4em;
-    margin: 10px;
-    text-align: justify;
+    font-family: 'districtthinregular', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-style: block;
+    line-height: 1.5;
 }
 
 .searchbar {
@@ -399,6 +407,7 @@ video {
     font-size: 1.5em;
     margin: 2px;
     background-color: #fef9fe;
+    font-family: 'districtthinregular', sans-serif;
 }
 
 button:hover {
@@ -523,9 +532,10 @@ button:hover {
 .kurv {
     text-decoration: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 3.5em;
     background-color: #fef9fe;
-    border: solid #ffb1ae;
+    font-family: 'rieslingregular';
+    margin-top: 50px;
 }
 
 

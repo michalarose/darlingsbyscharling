@@ -7,4 +7,4 @@ async function hentFooter() {
 
     footerDOM.innerHTML = footer;
 
-}
+};
