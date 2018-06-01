@@ -253,7 +253,7 @@ video {
 
 #info_tekst {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto 60px;
 }
 
 #info_tekst .overskrift {
@@ -284,7 +284,6 @@ video {
     grid-template: 'top top' 'left right';
     grid-gap: 7px;
     grid-row-gap: 0px;
-    transition: all 1s ease;
     max-width: 700px;
     margin: 0 auto;
     padding: 0px 20px;
