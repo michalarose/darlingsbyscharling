@@ -59,7 +59,7 @@
     </header>
 
     <section id="splash">
-        <a href="#smykker"><img src="down-arrow.svg" class="downarrow"></a>
+        <a href="#"><img src="down-arrow.svg" class="downarrow"></a>
         <video autoplay loop muted>
            <source src="splashvideofinal2.mp4" type="video/mp4">
        </video>
@@ -162,6 +162,11 @@
                     $(".dropdown").slideToggle();
                 });
             });
+        });
+        $(".downarrow").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#info_tekst").offset().top
+            }, 2000);
         });
     </script>
 

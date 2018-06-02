@@ -78,7 +78,6 @@ a {
 
 /* *** font slut *** */
 
-
 /* *** DROP DOWN MENU START *** */
 
 .ikon_kurv {
@@ -199,7 +198,6 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
-
 /* *** SPLASH start *** */
 
 #splash a {
@@ -238,7 +236,6 @@ video {
 
 
 /* *** SPLASH slut *** */
-
 
 /* *** Forside start *** */
 
@@ -318,9 +315,7 @@ video {
 
 /* *** forside slut *** */
 
-
 /* *** smykker START *** */
-
 
 /* *** Slideshow start*** */
 
@@ -535,7 +530,6 @@ button:hover {
 
 /* *** orering slut *** */
 
-
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -569,7 +563,6 @@ button:hover {
 
 
 /* *** *** */
-
 
 /* *** enkelt smykke slut *** */
 
@@ -630,10 +623,14 @@ button:hover {
 
 .omtekst h2 {
     color: #8B4F63;
+    font-size: 1.1em
+}
+
+.butik {
+    margin-bottom: 5px;
 }
 
 /* *** Om slut *** */
-
 
 /* *** Presse start *** */
 
@@ -657,7 +654,6 @@ button:hover {
 
 
 /* *** Presse slut *** */
-
 
 /* *** FOOTER START *** */
 
