@@ -265,6 +265,7 @@ video {
     border: 1px solid #8B4F63;
 }
 
+
 /* *** SPLASH slut *** */
 
 
@@ -566,9 +567,6 @@ button:hover {
 /* *** *** */
 
 
-/* *** *** */
-
-
 /* *** enkelt smykke slut *** */
 
 @media screen and (max-width: 850px) {
@@ -623,41 +621,32 @@ button:hover {
 
 /* *** Om start *** */
 
-#om .container {
-    display: grid;
-    grid-template: 'left right' 'bottom bottom';
-    transition: all 1s ease;
+#om .box {
     max-width: 800px;
     margin: 0 auto;
     padding: 0px 0px;
     margin-top: 150px;
 }
 
-#om img {
-    width: 100%;
+.txt_om {
+    font-family: 'rieslingregular', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.item-1 {
-    grid-area: left;
-    max-width: 300px;
-}
-
-.item-2 {
-    grid-area: right;
-    max-width: 300px;
-}
-
-.item-3 {
-    grid-area: bottom;
+.video {
+    grid-area: top top;
     margin: 0 auto;
     padding: 40px 0px;
-    width: 58.5vw;
+    width: 58.6vw;
     height: 32.9vw;
 }
 
 iframe {
     width: 100%;
     height: 100%;
+    border: 3px solid #8B4F63;
 }
 
 
