@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="da">
 
-<head id="head"></head>
+<head id="head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarlingsByScharling</title>
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Darlings By Scharling er delikate og fine håndlavede smykker, der er designet og fremstillet i København af Michaela Scharlin">
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.21/jquery.min.js"></script>
+
+    <link rel='stylesheet' id='insta-gallery-css' href='http://www.michalarose.dk/kea/darlingsbyscharling/wordpress/wp-content/plugins/insta-gallery/assets/insta-gallery-min.css?ver=1.6.1' type='text/css' media='all'>
+
+</head>
 
 <body>
 
-    <header id="header"></header>
+    <header id="header">
+        <nav>
+            <img class="ikon_kurv" src="shopping-purse-icon.svg" alt="ikon shopping bag">
+            <a href="index.html">
+                <img class="logo" src="DarlingsByScharling_logo_Riesling%20font.png">
+            </a>
+            <div class="container_drop">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+                <div class="dropdown">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Forside</a>
+                        <a href="smykker.html">Smykker</a>
+                        <div class="kategori">
+                            <a href="armbande.html">Armbånd</a>
+                            <a href="oreringe.html">Øreringe</a>
+                        </div>
+                        <a href="presse.html">Presse</a>
+                        <a href="om.html">Om</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section id="presse">
         <div class="presse_grid">
             <div class="item-1">
@@ -20,8 +73,26 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="head.js"></script>
-    <script src="header.js"></script>
+    <script>
+        $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 50) {
+                $('.logo').fadeOut();
+            } else {
+                $('.logo').fadeIn();
+            }
+        });
+
+        $(window).ready(function() {
+            setTimeout(function() {
+                $(".container_drop").click(function() {
+                    $(".container_drop").toggleClass("change");
+                    $(".dropdown").slideToggle();
+                });
+            });
+        });
+
+    </script>
     <script src="footer.js"></script>
 </body>
 

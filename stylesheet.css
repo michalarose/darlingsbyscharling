@@ -79,27 +79,6 @@ a {
 /* *** font slut *** */
 
 
-/* *** Slideshow start*** */
-
-#smykkesplash {
-    max-width: 1080px;
-    margin: 160px auto 10px auto;
-}
-
-.slideshow {
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-.mySlides {
-    width: 100%;
-    display: none;
-}
-
-
-/* *** Slideshow slut *** */
-
-
 /* *** DROP DOWN MENU START *** */
 
 .ikon_kurv {
@@ -309,6 +288,7 @@ video {
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
+    margin-bottom: 200px;
 }
 
 .container:hover {
@@ -357,7 +337,28 @@ video {
 /* *** forside slut *** */
 
 
-/* *** smykker start *** */
+/* *** smykker START *** */
+
+
+/* *** Slideshow start*** */
+
+#smykkesplash {
+    max-width: 1080px;
+    margin: 200px auto 10px auto;
+}
+
+.slideshow {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+
+/* *** Slideshow slut *** */
 
 .oreringarmband {
     width: 300px;
@@ -432,12 +433,14 @@ video {
 #tekstboks p {
     font-family: 'districtthinregular', sans-serif;
     font-weight: normal;
-    letter-spacing: 2px;
-    margin: 0 auto;
+    letter-spacing: 0.5px;
     font-size: 25px;
     font-style: block;
-    line-height: 1.5;
+    line-height: 1.2;
 }
+
+
+/* *** Smykker SLUT *** */
 
 .searchbar {
     border: none;
@@ -469,9 +472,6 @@ button:hover {
     padding: 0 10px;
     position: inherit;
 }
-
-
-/* *** smykker slut *** */
 
 #armbande {
     display: grid;
