@@ -78,6 +78,7 @@ a {
 
 /* *** font slut *** */
 
+
 /* *** Slideshow start*** */
 
 #smykkesplash {
@@ -97,6 +98,7 @@ a {
 
 
 /* *** Slideshow slut *** */
+
 
 /* *** DROP DOWN MENU START *** */
 
@@ -218,6 +220,7 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 #splash a {
@@ -264,6 +267,7 @@ video {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** Forside start *** */
 
@@ -352,11 +356,12 @@ video {
 
 /* *** forside slut *** */
 
+
 /* *** smykker start *** */
 
 .oreringarmband {
-    width: 400px;
-    margin: 160px auto 0 auto;
+    width: 300px;
+    margin: 190px auto 0 auto;
 }
 
 .oreringarmband a {
@@ -443,9 +448,8 @@ video {
 .filtermenu button {
     text-decoration: none;
     border: none;
-    padding: 7px;
+    padding: 6px;
     font-size: 1.5em;
-    margin: 2px;
     background-color: #fef9fe;
     font-family: 'districtthinregular', sans-serif;
 }
@@ -512,7 +516,6 @@ button:hover {
     ;
 }
 
-
 .navn {
     padding-top: 4%;
 }
@@ -550,6 +553,7 @@ button:hover {
 
 /* *** orering slut *** */
 
+
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -583,6 +587,7 @@ button:hover {
 
 
 /* *** *** */
+
 
 /* *** enkelt smykke slut *** */
 
@@ -673,6 +678,7 @@ iframe {
 
 /* *** Om slut *** */
 
+
 /* *** Presse start *** */
 
 #presse {
@@ -695,6 +701,7 @@ iframe {
 
 
 /* *** Presse slut *** */
+
 
 /* *** FOOTER START *** */
 
@@ -786,5 +793,5 @@ iframe {
 }
 
 .active {
-    border-bottom: solid 1px;
+    border-bottom: solid 0.1px;
 }
