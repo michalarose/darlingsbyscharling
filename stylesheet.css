@@ -78,7 +78,6 @@ a {
 
 /* *** font slut *** */
 
-
 /* *** Slideshow start*** */
 
 #smykkesplash {
@@ -98,7 +97,6 @@ a {
 
 
 /* *** Slideshow slut *** */
-
 
 /* *** DROP DOWN MENU START *** */
 
@@ -220,7 +218,6 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
-
 /* *** SPLASH start *** */
 
 #splash a {
@@ -266,7 +263,6 @@ video {
 }
 
 /* *** SPLASH slut *** */
-
 
 /* *** Forside start *** */
 
@@ -355,8 +351,28 @@ video {
 
 /* *** forside slut *** */
 
-
 /* *** smykker start *** */
+
+.oreringarmband {
+    width: 400px;
+    margin: 160px auto 0 auto;
+}
+
+.oreringarmband a {
+    text-decoration: none;
+    font-family: 'districtthinregular', sans-serif;
+    color: black;
+}
+
+.oreringarmband a:hover {
+    color: #8B4F63;
+    cursor: pointer;
+}
+
+.oreringarmband nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 .smykkenavn1 {
     position: absolute;
@@ -440,7 +456,7 @@ button:hover {
 
 #filter {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 10px;
     margin-bottom: 20px;
     max-width: 1080px;
     margin-left: auto;
@@ -491,7 +507,10 @@ button:hover {
     -webkit-transition: opacity .5s, visibility .5s;
     -o-transition: opacity .5s, visibility .5s;
     transition: opacity .5s, visibility .5s;
+    font-family: 'districtthinregular', sans-serif;
+    ;
 }
+
 
 .navn {
     padding-top: 4%;
@@ -530,7 +549,6 @@ button:hover {
 
 /* *** orering slut *** */
 
-
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -565,9 +583,7 @@ button:hover {
 
 /* *** *** */
 
-
 /* *** *** */
-
 
 /* *** enkelt smykke slut *** */
 
@@ -613,10 +629,14 @@ button:hover {
         Left: calc(50% - 100px);
     }
     #filter {
-        margin-top: 120px;
+        margin-top: 20px;
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .oreringarmband {
+        width: 200px;
+        margin-top: 100px
     }
 }
 
@@ -663,7 +683,6 @@ iframe {
 
 /* *** Om slut *** */
 
-
 /* *** Presse start *** */
 
 #presse {
@@ -686,7 +705,6 @@ iframe {
 
 
 /* *** Presse slut *** */
-
 
 /* *** FOOTER START *** */
 
@@ -772,3 +790,11 @@ iframe {
 
 
 /* *** FOOTER SLUT *** */
+
+.alle {
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: solid 1px;
+}
