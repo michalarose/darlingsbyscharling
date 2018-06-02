@@ -394,7 +394,7 @@ video {
     grid-template: 'left right';
     grid-gap: 10px;
     max-width: 1080px;
-    margin: 100px auto;
+    margin: 80px auto;
     position: relative;
     justify-content: center;
 }
@@ -411,6 +411,7 @@ video {
     padding: 20px;
     border-style: double;
     margin: 0 auto;
+    margin-top: 180px;
 }
 
 #tekstboks p {
@@ -812,7 +813,16 @@ button:hover {
         text-align: center;
         padding: 10px 10px;
         max-width: 100%;
-        margin: 0 20px;
+        margin: 180px 20px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #tekstboks {
+        text-align: center;
+        padding: 10px 10px;
+        max-width: 100%;
+        margin: 140px 20px 0px 20px;
     }
 }
 
