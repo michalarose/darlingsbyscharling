@@ -78,6 +78,7 @@ a {
 
 /* *** font slut *** */
 
+
 /* *** DROP DOWN MENU START *** */
 
 .ikon_kurv {
@@ -198,6 +199,7 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 #splash a {
@@ -207,8 +209,6 @@ a {
     Left: 48%;
     animation: jump 2s infinite;
 }
-
-
 
 @keyframes jump {
     0% {
@@ -236,6 +236,7 @@ video {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** Forside start *** */
 
@@ -311,11 +312,11 @@ video {
 }
 
 
-
-
 /* *** forside slut *** */
 
+
 /* *** smykker START *** */
+
 
 /* *** Slideshow start*** */
 
@@ -490,7 +491,6 @@ button:hover {
     -o-transition: opacity .5s, visibility .5s;
     transition: opacity .5s, visibility .5s;
     font-family: 'districtthinregular', sans-serif;
-
 }
 
 .navn {
@@ -530,6 +530,7 @@ button:hover {
 
 /* *** orering slut *** */
 
+
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -564,7 +565,9 @@ button:hover {
 
 /* *** *** */
 
+
 /* *** enkelt smykke slut *** */
+
 
 /* *** Om start *** */
 
@@ -591,8 +594,6 @@ button:hover {
     height: 0;
 }
 
-
-
 .video iframe {
     left: 0;
     top: 0;
@@ -607,7 +608,6 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
     max-width: 1000px;
-
 }
 
 .ombilleder img {
@@ -630,7 +630,9 @@ button:hover {
     margin-bottom: 5px;
 }
 
+
 /* *** Om slut *** */
+
 
 /* *** Presse start *** */
 
@@ -655,13 +657,14 @@ button:hover {
 
 /* *** Presse slut *** */
 
+
 /* *** FOOTER START *** */
 
 #footer {
     padding: 1em 2em 2em 2em;
     background-color: #ffb1ae;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #footer .icons {
@@ -692,8 +695,6 @@ button:hover {
 #footer .copyright li a {
     color: inherit;
 }
-
-
 
 .copyright p {
     color: white;
@@ -740,7 +741,6 @@ button:hover {
     border-bottom: solid 0.1px;
 }
 
-
 @media screen and (max-width: 850px) {
     #oreringe {
         grid-template-columns: repeat(2, 1fr);
@@ -754,7 +754,6 @@ button:hover {
     .ombilleder {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media screen and (min-width: 750px) {
