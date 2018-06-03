@@ -47,7 +47,6 @@ a {
 .info {
     margin: 0 10px;
     position: relative;
-
 }
 
 .flex {
@@ -82,6 +81,7 @@ a {
 
 
 /* *** font slut *** */
+
 
 /* *** DROP DOWN MENU START *** */
 
@@ -203,6 +203,7 @@ a {
 
 /* *** DROP DOWN MENU SLUT *** */
 
+
 /* *** SPLASH start *** */
 
 #splash a {
@@ -239,6 +240,7 @@ a {
 
 
 /* *** SPLASH slut *** */
+
 
 /* *** Forside start *** */
 
@@ -279,7 +281,7 @@ a {
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .container:hover {
@@ -314,27 +316,8 @@ a {
 
 /* *** forside slut *** */
 
+
 /* *** smykker START *** */
-
-/* *** Slideshow start*** */
-
-#smykkesplash {
-    max-width: 1080px;
-    margin: 200px auto 10px auto;
-}
-
-.slideshow {
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-.mySlides {
-    width: 100%;
-    display: none;
-}
-
-
-/* *** Slideshow slut *** */
 
 .oreringarmband {
     width: 300px;
@@ -445,6 +428,7 @@ a {
 .infographic {
     width: 100%;
 }
+
 
 /* *** Smykker SLUT *** */
 
@@ -559,6 +543,7 @@ button:hover {
 
 /* *** orering slut *** */
 
+
 /* *** enkelt smykke start *** */
 
 #single_orering {
@@ -570,7 +555,6 @@ button:hover {
 }
 
 #single_armband {
-
     max-width: 800px;
     margin: 70px auto 170px auto;
     grid-gap: 4px;
@@ -589,13 +573,14 @@ button:hover {
     left: 70%;
     top: 10%;
     min-width: 220px;
-
 }
 
 
 /* *** *** */
 
+
 /* *** enkelt smykke slut *** */
+
 
 /* *** Om start *** */
 
@@ -660,6 +645,7 @@ button:hover {
 
 /* *** Om slut *** */
 
+
 /* *** Presse start *** */
 
 #presse {
@@ -682,6 +668,7 @@ button:hover {
 
 
 /* *** Presse slut *** */
+
 
 /* *** FOOTER START *** */
 
@@ -795,7 +782,6 @@ button:hover {
         margin: 0 auto;
         text-align: center;
         color: white;
-
     }
     .smykkenavn2 {
         position: absolute;
@@ -804,7 +790,6 @@ button:hover {
         text-align: center;
         color: white;
     }
-
 }
 
 @media screen and (max-width: 750px) {
