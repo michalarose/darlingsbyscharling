@@ -47,6 +47,7 @@ a {
 
 .info {
     margin: 0 10px;
+    position: relative;
 
 }
 
@@ -225,7 +226,7 @@ a {
     }
 }
 
-video {
+.splashvideo {
     height: 100%;
     width: 100%;
     border-style: none;
@@ -310,7 +311,7 @@ video {
     text-align: center;
     color: #ffb1ae;
     top: 41%;
-    z-index: 100;
+    z-index: 5;
 }
 
 
@@ -371,6 +372,7 @@ video {
     font-style: normal;
     letter-spacing: 5px;
     font-size: 40px;
+    z-index: 5;
 }
 
 .smykkenavn2 {
@@ -386,9 +388,12 @@ video {
     font-style: normal;
     letter-spacing: 5px;
     font-size: 40px;
+    z-index: 5;
 }
 
-.oreringlink.armbandlink {}
+#smykkeboks img:hover {
+    filter: brightness(0.7)
+}
 
 #smykkeboks {
     grid-template: 'left right';
@@ -409,7 +414,7 @@ video {
     grid-template: 'top' 'bottom';
     grid-gap: 10px;
     padding: 20px;
-    border-style: double;
+    border: double #8B4F63;
     margin: 0 auto;
 }
 
@@ -435,6 +440,14 @@ video {
     margin-right: 0px;
 }
 
+#hovervideo {
+    max-width: 1080px;
+    margin: 50px auto 0 auto;
+}
+
+.infographic {
+    width: 100%;
+}
 
 /* *** Smykker SLUT *** */
 
@@ -552,20 +565,17 @@ button:hover {
 /* *** enkelt smykke start *** */
 
 #single_orering {
-    display: grid;
-    grid-template: 'left right';
     max-width: 800px;
-    margin: 170px auto;
+    margin: 70px auto 170px auto;
     grid-gap: 4px;
     grid-row-gap: 0px;
     position: relative;
 }
 
 #single_armband {
-    display: grid;
-    grid-template: 'left right';
+
     max-width: 800px;
-    margin: 170px auto;
+    margin: 70px auto 170px auto;
     grid-gap: 4px;
     grid-row-gap: 0px;
     position: relative;
@@ -578,6 +588,10 @@ button:hover {
     background-color: #fef9fe;
     font-family: 'rieslingregular';
     text-align: right;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    min-width: 220px;
 
 }
 
@@ -785,6 +799,7 @@ button:hover {
         margin: 0 auto;
         text-align: center;
         color: white;
+
     }
     .smykkenavn2 {
         position: absolute;
@@ -793,6 +808,7 @@ button:hover {
         text-align: center;
         color: white;
     }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -801,6 +817,20 @@ button:hover {
         text-align: center;
         padding: 0px;
         max-width: 100%;
+    }
+    .smykkenavn1 {
+        top: 21%;
+        left: 24%;
+    }
+    .smykkenavn2 {
+        top: 72%;
+        left: 24%;
+    }
+    .kurv {
+        min-width: 126px;
+        font-size: 2em;
+        left: 68%;
+        top: 5%;
     }
 }
 
@@ -871,5 +901,15 @@ button:hover {
         line-height: 1.65em;
         margin: 0;
         padding: 0.5em 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navnpris {
+        visibility: visible;
+        opacity: 0.8;
+        font-size: 1em;
+        height: 60px;
+        top: 1%;
     }
 }
