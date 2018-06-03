@@ -103,7 +103,7 @@ a {
     position: fixed;
     width: 100%;
     height: 45px;
-    z-index: 1;
+    z-index: 10;
     top: 0;
 }
 
@@ -114,12 +114,14 @@ a {
     display: block;
     cursor: pointer;
     min-width: 40px;
+    z-index: 10;
 }
 
 .container_drop a {
     color: black;
     text-decoration: none;
     display: block;
+    z-index: 10;
 }
 
 .bar1,
@@ -135,6 +137,7 @@ a {
 .kategori {
     font-size: 8px;
     margin-left: 10px;
+    z-index: 10;
 }
 
 
@@ -170,8 +173,8 @@ a {
 /* Dropdown Content (Hidden by Default) */
 
 .dropdown-content {
-    z-index: 1;
     padding: 10px 0px 0px 0px;
+    z-index: 10;
 }
 
 
@@ -184,6 +187,7 @@ a {
     display: block;
     font-family: 'Futura';
     letter-spacing: 2px;
+    z-index: 10;
 }
 
 
@@ -853,7 +857,7 @@ button:hover {
         text-align: center;
         padding: 10px 10px;
         max-width: 100%;
-        margin: 140px 20px 0px 20px;
+        margin: 0px 20px 0px 20px;
     }
 }
 
