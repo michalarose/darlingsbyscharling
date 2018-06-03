@@ -615,7 +615,6 @@ button:hover {
 }
 
 .video {
-    grid-area: top top;
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
