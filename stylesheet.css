@@ -904,7 +904,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     .navnpris {
         visibility: visible;
         opacity: 0.8;

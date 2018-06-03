@@ -68,8 +68,6 @@
 
             <img class="smykkebillede" alt="Darlings by scharling armbånd" data-image>
 
-            <img class="smykkebilledeevt" data-evtimage>
-
             <div class="info">
                 <div class="flex">
                     <div class="smykkeinfo">
@@ -115,12 +113,6 @@
 
             function visSingle() {
                 document.querySelector("[data-image]").src = single.acf.foto.url;
-                if (single.acf.evt_foto != false) {
-                    document.querySelector("[data-evtimage]").src = single.acf.evt_foto.url;
-                }
-
-
-
                 document.querySelector("[data-title]").textContent = single.acf.type;
                 document.querySelector("[data-pris]").textContent = single.acf.pris;
                 document.querySelector("[data-farve]").textContent = single.acf.farve;
@@ -146,7 +138,6 @@
                 });
             });
         });
-
     </script>
 
 </body>

@@ -70,7 +70,6 @@
     <section id="single_orering">
         <article>
             <img class="smykkebillede" data-image alt="darlings by scharling ørering">
-            <img class="smykkebilledeevt" data-evtimage alt="darlings by scharling ørering">
 
             <div class="info">
                 <h2 class="navn" data-title></h2>
@@ -113,11 +112,6 @@
 
             function visSingle() {
                 document.querySelector("[data-image]").src = single.acf.foto.url;
-                if (single.acf.evt_foto != false) {
-                    document.querySelector("[data-evtimage]").src = single.acf.evt_foto.url;
-                }
-
-
 
                 document.querySelector("[data-title]").textContent = single.acf.type;
                 document.querySelector("[data-pris]").textContent = single.acf.pris;
@@ -144,7 +138,6 @@
                 });
             });
         });
-
     </script>
 </body>
 
